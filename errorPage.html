@@ -1,0 +1,42 @@
+<!DOCTYPE = HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css.css" />
+<title>When things go wrong...
+</title>
+</head>
+<body>
+<div id = "container">
+<div id ="header">
+<a href="index.html"><img src="citySkyline1.jpg" alt="top banner" width="600px"></a>
+</div>
+
+<div id = "mainMenu">
+<ul>
+<li> <a href ="index.html">Home</a>
+<li> <a href ="aboutMe.html">About Me</a>
+<li> <a href ="qualifications.html">Qualifications</a>
+<li> <a href ="projects.html">Projects</a>
+<li> <a href ="contactMe.html">Contact me</a>
+<li> <a href ="blog.html">Blog</a>
+</ul>
+</div>
+
+<div id="mainBlock">
+<h1 class = "center">
+Oops! Something's gone terribly, horribly wrong!
+</h1>
+<p class = "center">Just in case there's a hole in the fabric of space time, 
+please bear with us while we patch it back up.</p>
+</div>
+
+</body>
+<footer>
+<span id="r">ALEX@AMROCHE.CO.UK </span>
+<span id ="l">ALEXANDER MICHAEL ROCHE</span>
+<?php
+$todayPlusADay = mktime(0, 0, 0, date("m"), date("d")+1, date("y"));
+echo "Todays Date Plus One Day (Tomorrow) ".date("m/d/y", $todayPlusADay); 
+?>
+</footer>
+</html>

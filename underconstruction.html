@@ -1,0 +1,31 @@
+<!DOCTYPE = HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css.css" />
+<title>Under Construction.
+</title>
+</head>
+<body>
+<div id = "container">
+<div id ="header">
+<a href="underconstruction.html"><img src="citySkyline1.jpg" alt="top banner" width="600px"></a>
+</div>
+
+
+<div id="mainBlock">
+<h1 class = "center">
+Thanks for being awesome and wanting to see my site!
+</h1>
+<p class = "center">However, at the moment, it's still under construction. Check back soon!</p>
+</div>
+
+</body>
+<footer>
+<span id="r">ALEX@AMROCHE.CO.UK </span>
+<span id ="l">ALEXANDER MICHAEL ROCHE</span>
+<?php
+$todayPlusADay = mktime(0, 0, 0, date("m"), date("d")+1, date("y"));
+echo "Todays Date Plus One Day (Tomorrow) ".date("m/d/y", $todayPlusADay); 
+?>
+</footer>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE = HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css.css" />
+<title>Getting in touch with me.
+</title>
+</head>
+<body>
+<div id = "container">
+<div id ="header">
+<a href="index.html"><img src="citySkyline1.jpg" alt="top banner" width="600px"></a>
+</div>
+
+<div id = "mainMenu">
+<ul>
+<li> <a href ="index.html">Home</a>
+<li> <a href ="aboutMe.html">About Me</a>
+<li> <a href ="qualifications.html">Qualifications</a>
+<li> <a href ="projects.html">Projects</a>
+<li> <a href ="contactMe.html">Contact me</a>
+</ul>
+
+</div>
+
+<div id="mainBlock">
+
+
+<div id="left">
+<p.center><?php echo($result);?></p>
+<h1>Contacting Me</h1>
+<p>If you have any queries or comments regarding this site, or would like to contact me 
+regarding possibly working for you, please feel free to get in touch with me in any of 
+the following ways.</p>
+<table>
+<tbody>
+<tr class="bumperBody">
+<td>Email Addresses:</td>
+<td align="right">alex@amroche.co.uk</td>
+</tr>
+<tr>
+<td></td>
+<td align="right">ma901ar@gold.ac.uk</td>
+</tr>
+<tr>
+<td></td>
+<td align="right">alexandermichaelroche@googlemail.com</td>
+</tr>
+<tr class="bumperBody">
+<td>Twitter:</td>
+<td align="right">@Zenmaster13</td>
+</tr>
+<tr class="bumperBottom">
+<td>Facebook:</td>
+<td align="right">/alexander.michael.roche</td>
+</tr>
+</tbody>
+</table>
+
+<p> Additionally, you can also contact me by filling out this form if you have any inquiries, 
+comments or suggestions. I will do my utmost best to get back 
+to you with ideas and suggestions for a solution to your problem. </p>
+
+<form id="contactMe" action="mail.php" method="POST">
+<table width="100%">
+<tbody>
+<tr class="bumperbody">
+<td>Email to send to;</td>
+<td align="right">Professional Inquiries<INPUT type ="radio" name="email" value="alex@amroche.co.uk" checked></td>
+</tr>
+<tr>
+<td></td><td align="right">University Email<INPUT type ="radio" name="email" value="ma901ar@gold.ac.uk"></td>
+</tr>
+<tr>
+<td></td><td align="right">Googlemail<INPUT type ="radio" name="email" value="alexandermichaelroche@googlemail.com"></td>
+</tr>
+<tr class="bumperbody">
+<td>Name:</td> <td align="right"><INPUT type="text" name="name"></td>
+</tr>
+<tr class="bumperbody">
+<td>Return Address:</td> <td align="right"><INPUT type="text" name="returnemail"></td>
+</tr>
+<tr class="bumperbody">
+<td>Subject:</td> <td align="right"><INPUT type="text" name="subject"></td>
+</tr>
+<tr class ="bumperbody">
+<td colspan ="2">Message: <textarea name="message" rows="6" cols="42"></textarea></td>
+</tr>
+<tr class ="bumperbody">
+<td><img id="captcha" src="/securimage/securimage_show.php" alt="CAPTCHA Image" width="82% height="82%"/></td>
+<td align="right">
+<a href="#" onclick="document.getElementById('captcha').src = '/securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a><br>
+<input type="text" name="captcha_code" size="10" maxlength="6" />
+</td>
+<tr class ="bumperbottom">
+<td colspan="2"><center><input type="submit" value="Send Message"></center></td>
+</tr>
+</tbody>
+</table>
+</form>
+
+</div>
+
+<div id="right">
+<h1>About contacting me</h1>
+<p>Thank you for trying to get in touch with me! I'm really sorry if I don't get back to you quickly, 
+it's likely i've not checked my e-mail yet, or just outright not seen your email, or your email has 
+ended up in my spam folder, for whatever reason!</p>
+<p>It's also equally as likely that something has gone terribly wrong with the mailing script, so if you 
+suspect your message hasn't sent, feel free to try again!</p>
+</div>
+</div>
+
+
+</div>
+
+</body>
+<footer>
+<span id="r">ALEX@AMROCHE.CO.UK </span>
+<!--
+<span id-="center"></span>
+-->
+<span id ="l">ALEXANDER MICHAEL ROCHE</span>
+
+</footer>
+</html>
+

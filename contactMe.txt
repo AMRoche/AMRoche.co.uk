@@ -1,0 +1,51 @@
+<!DOCTYPE = HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css.css" />
+<title>What i'm all about.
+</title>
+</head>
+<body>
+<div id = "container">
+<div id ="header">
+<img src="citySkyline1.jpg" alt="top banner" width="600px">
+</div>
+
+<div id = "mainMenu">
+<ul>
+<li> <a href ="home.html">Home</a>
+<li> <a href ="aboutMe.html">About Me</a>
+<li> <a href ="qualifications.html">Qualifications</a>
+<li> <a href ="projects.html">Projects</a>
+<li> <a href ="contactMe.html">Contact me</a>
+</ul>
+
+</div>
+
+<div id="mainBlock">
+
+
+<div id="left">
+<h1>Contacting Me</p>
+</div>
+<div id="right">
+<h1>About contacting me</h1>
+<p>Thank you for trying to get in touch with me! I'm really sorry if I don't get back to you quickly, 
+it's likely i've not checked my e-mail yet, or just outright not seen your email, or your email has 
+ended up in my spam folder, for whatever reason!</p>
+</div>
+	</div>
+
+
+</div>
+
+</body>
+<footer>
+<span id="r">ALEX@AMROCHE.CO.UK </span>
+<span id ="l">ALEXANDER MICHAEL ROCHE</span>
+<?php
+$todayPlusADay = mktime(0, 0, 0, date("m"), date("d")+1, date("y"));
+echo "Todays Date Plus One Day (Tomorrow) ".date("m/d/y", $todayPlusADay); 
+?>
+</footer>
+</html>

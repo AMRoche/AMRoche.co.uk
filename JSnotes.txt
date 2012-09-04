@@ -1,0 +1,85 @@
+console.log($), depending on where you run it, will respond differently depending on what is used for $.
+	Runs in context of page.
+
+Circumventing that by script tags, or location:javascript
+Clicking links -> location = href. 
+
+------------------------
+Merge CSS stylesheets with @media tags for different tags.
+If localhost-> keep files seperate.
+	->merge files on runtime and testing instead of while dev'ing.
+	->Merge all images in to one image, and use CSS background-position and overflow to show different 
+		parts of image.
+Compress everything text based before sending it out (Gzip). Needs enabling.
+	SERVER
+
+Apache2-> Apache config, AddOutputFIlterByType DEFLATE , then list text file types(text/html text/css text
+/javascript etc.
+
+Make sure Keep-Alive feature is enabled (HTTPS session resuming = keep alive).
+
+	MINIFICATION
+in CSS and JS, whitespace and comments are removed and make file uniform.
+
+keep elements cached locally. this makes https cacheable too.
+	-> use the rewrite rule -v[0-9] -> src="css-v25.css" -> css.css
+	
+Hosted libraries don't help.
+
+CDN
+	-> global audience
+	-> or more traffic than you can handle.
+
+PARALLELISATION
+	serve things from multiple hostnames (
+	amroche.co.uk. CNAME www.amroche.co.uk
+	www.amroche.co.uk A (IP ADDRESS)
+	
+	serve CSS from same host as HTML
+	Avoid blocking JS
+		CSS before scripts
+		No JS in head
+
+	document.write is evil..
+		-> affects rest of documents
+		->makes parser wait || parse page twice.
+
+ADS AND WIDGETS
+use <iframe> version, and at the end of <body> and position:absolute.
+
+onload is dead (do not use)
+	inconsistent as hell.
+	
+INLINing -> put all content in html.
+
+Choose format wisely
+	not GIF
+Don;t use PNG24
+	if you do, posterize
+
+Use PNG+Alpha, lowest number of colours
+JPEG likes blur and 8*8 boundaries
+
+approximate images using CSS to make it feel snappier (background colours, gradients etc.)
+
+give the final dimensions of image to browser to start with instead of hiding it.
+
+use overflow:hidden instead of clearing divs.
+
+no @font-face in CSS3.
+
+-use makefile to concatenate files.
+	what-to-create:what-it-needs
+	<tab> how-to-do-it
+	
+	all:build/merged-min.js build/merged-min.css
+		java -jar yuicompressor.jar --tyoe =js -o $@ $^
+		
+-clean:
+	-rm -rf build/*
+	
+	var = list of files space seperated can be used as variable.
+	JS_FILES = LIST OF FILES
+	
+
+

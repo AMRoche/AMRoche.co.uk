@@ -9,6 +9,12 @@ body {
 }
 
 #header{
+	position:relative;
+}
+#clock{
+	position:absolute;
+	bottom:0px;
+	right:0px;
 }
 
 textarea {
@@ -17,7 +23,9 @@ textarea {
 
 #container{
 	width:600px;
-    margin: 0 auto;
+    margin-top: 0px;
+	margin-bottom:0px;
+	margin-left:250px;
 	overflow:hidden;
     background:#FFFFFF;
 	}
@@ -71,9 +79,9 @@ a{text-decoration:none;}
 #mainMenu ul li a:hover {color:#2E2E2E; font-weight:bold; }  /* mouse over link */
 #mainMenu ul li a:active {color:#000; font-weight:bold; }  /* selected link */
 
- a:link {color:#2E2E2E; }      /* unvisited link */
- a:visited {color:#A1A1A1;}  /* visited link */
- a:hover {color:#2E2E2E; font-weight:bold; }  /* mouse over link */
+ a:link {color:#5E5E5E; }      /* unvisited link */
+ a:visited {color:#A1A1A1;}  /* #A1A1A1 visited link */
+ a:hover {color:#8E8E8E; font-weight:bold; }  /* mouse over link */
  a:active {color:#000; font-weight:bold; text-decoration:bold;}  /* selected link */
 	
 #left{
@@ -147,7 +155,9 @@ font:bold 14px Arial, Helvetica, sans-serif;
 color:#2E2E2E;
 padding-top:20px;
 width:600px;
-margin: 0 auto;
+margin-top:0px;
+margin-bottom:0px;
+margin-left:250px;
 margin-bottom:30px;
 }
 
